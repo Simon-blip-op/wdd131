@@ -1,10 +1,12 @@
 @media screen and (min-width: 768px) {
 
+    /* Hide Hamburger */
     #menu {
         display: none;
     }
 
-    .navigation {
+    /* Horizontal Navigation */
+    nav {
         flex-direction: row;
         justify-content: center;
     }
@@ -13,6 +15,7 @@
         display: block;
     }
 
+    /* Grid Layout */
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
