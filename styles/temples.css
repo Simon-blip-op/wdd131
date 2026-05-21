@@ -10,15 +10,17 @@ body {
     color: #222;
 }
 
-/* HEADER */
-
 header {
     background-color: darkblue;
     padding: 1rem;
     position: relative;
 }
 
-/* HAMBURGER BUTTON */
+.site-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 #menu {
     font-size: 2rem;
@@ -28,7 +30,7 @@ header {
     cursor: pointer;
 
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
 }
 
@@ -39,8 +41,6 @@ header {
 #menu.open::before {
     content: "✖";
 }
-
-/* NAVIGATION */
 
 nav {
     display: flex;
@@ -66,8 +66,6 @@ nav {
     display: block;
 }
 
-/* MAIN */
-
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -79,15 +77,11 @@ main h1 {
     margin-bottom: 2rem;
 }
 
-/* GALLERY GRID */
-
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
-
-/* FIGURES */
 
 figure {
     background-color: white;
@@ -108,12 +102,14 @@ figcaption {
     font-weight: bold;
 }
 
-/* FOOTER */
-
 footer {
     background-color: darkblue;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }
