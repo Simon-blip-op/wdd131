@@ -35,7 +35,7 @@ nav a {
     padding: 0.5rem 1rem;
 }
 
-/* HOVER EFFECT */
+/* navigation link hover effect */
 nav a:hover {
     background-color: white;
     color: #0b4f7a;
