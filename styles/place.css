@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #007749;
+    --secondary-color: #ffb81c;
+    --background-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+picture img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.data {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 60px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Large Screen */
+@media screen and (min-width: 768px) {
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
