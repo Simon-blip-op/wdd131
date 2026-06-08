@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #1D3557;
+    --secondary-color: #457B9D;
+    --background-color: #F1F5F9;
+    --card-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+section {
+    background-color: var(--card-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+pre {
+    overflow-x: auto;
+    background-color: #e9ecef;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
