@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Submitted</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer>
+        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+
+        reviewCount++;
+
+        localStorage.setItem("reviewCount", reviewCount);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("count").textContent = reviewCount;
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Thank You!</h1>
+</header>
+
+<main>
+
+    <p>Your review has been submitted successfully.</p>
+
+    <h2>Total Reviews Submitted:</h2>
+    <p id="count"></p>
+</main>
+
+<footer>
+
+    <p>
+        © <span id="currentyear"></span>
+        🌸 Simon Banda 🌸 South Africa
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
