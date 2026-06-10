@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
-
 <body>
 
 <header>
@@ -32,19 +30,36 @@
         <fieldset>
             <legend>Overall Rating *</legend>
 
-            <input type="radio" id="rating1" name="rating" value="1" required>
-            <input type="radio" id="rating2" name="rating" value="2" required>
-            <input type="radio" id="rating3" name="rating" value="3" required>
-            <input type="radio" id="rating4" name="rating" value="4" required>
-            <input type="radio" id="rating5" name="rating" value="5" required>
-            <label for="rating5">☆☆☆☆☆</label>
+            <label for="rating1">
+                <input type="radio" id="rating1" name="rating" value="1" required>
+                ☆
+            </label>
+
+            <label for="rating2">
+                <input type="radio" id="rating2" name="rating" value="2" required>
+                ☆☆
+            </label>
+
+            <label for="rating3">
+                <input type="radio" id="rating3" name="rating" value="3" required>
+                ☆☆☆
+            </label>
+
+            <label for="rating4">
+                <input type="radio" id="rating4" name="rating" value="4" required>
+                ☆☆☆☆
+            </label>
+
+            <label for="rating5">
+                <input type="radio" id="rating5" name="rating" value="5" required>
+                ☆☆☆☆☆
+            </label>
         </fieldset>
 
         <label for="installDate">Date of Installation *</label>
         <input type="date" id="installDate" name="installDate" required>
 
         <fieldset>
-
             <legend>Useful Features</legend>
 
             <input type="checkbox" id="durability" name="features" value="Durability">
@@ -69,6 +84,7 @@
         <input type="submit" value="Submit Review">
 
     </form>
+
 </main>
 
 <footer>
@@ -79,6 +95,7 @@
     </p>
 
     <p id="lastModified"></p>
+
 </footer>
 
 </body>
