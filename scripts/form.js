@@ -30,16 +30,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const select = document.querySelector("#product");
 
-    products.forEach(product => {
+    if (select) {
+        products.forEach(product => {
 
-        const option = document.createElement("option");
+            const option = document.createElement("option");
 
-        option.value = product.id;
-        option.textContent = product.name;
+            option.value = product.id;
+            option.textContent = product.name;
 
-        select.appendChild(option);
-    });
+            select.appendChild(option);
+        });
+    }
 
-    document.querySelector("#lastModified").textContent =
-        `Last Modified: ${document.lastModified}`;
+    const year = document.querySelector("#currentyear");
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+    const lastModified = document.querySelector("#lastModified");
+
+    if (lastModified) {
+        lastModified.textContent =
+            `Last Modified: ${document.lastModified}`;
+    }
+
+    const count = document.querySelector("#count");
+
+    if (count) {
+
+        let reviewCount =
+            Number(localStorage.getItem("reviewCount")) || 0;
+
+        reviewCount++;
+
+        localStorage.setItem("reviewCount", reviewCount);
+
+        count.textContent = reviewCount;
+    }
 });

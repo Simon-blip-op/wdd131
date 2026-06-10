@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Review submission confirmation page.">
+    <meta name="author" content="Simon Banda">
+
     <title>Review Submitted</title>
 
     <link rel="stylesheet" href="styles/form.css">
-    <script defer>
-        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
-
-        reviewCount++;
-
-        localStorage.setItem("reviewCount", reviewCount);
-
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("count").textContent = reviewCount;
-        });
-    </script>
+    <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
 
 <header>
     <h1>Thank You!</h1>
 </header>
 
-<main>
+<main>,
 
     <p>Your review has been submitted successfully.</p>
 
