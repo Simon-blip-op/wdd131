@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Family Roots Explorer.">
+    <meta name="author" content="Simon Banda">
+
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="styles/family.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Family Roots Explorer</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="family-tree.html">Family Tree</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Contact Us</h2>
+
+    <p>
+        Have questions about family history research?
+        We'd love to hear from you.
+    </p>
+
+    <form>
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+</main>
+
+<footer>
+    <p>
+        © <span id="currentYear"></span>
+        Family Roots Explorer | Simon Banda
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+<script src="scripts/family.js"></script>
+
+</body>
+</html>

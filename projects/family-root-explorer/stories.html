@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share and preserve family stories.">
+    <meta name="author" content="Simon Banda">
+
+    <title>Family Stories</title>
+
+    <link rel="stylesheet" href="styles/family.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Family Roots Explorer</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="family-tree.html">Family Tree</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Share a Family Story</h2>
+
+    <form id="storyForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required>
+
+        <label for="story">Family Story</label>
+        <textarea id="story" rows="5" required></textarea>
+
+        <button type="submit">Save Story</button>
+    </form>
+</section>
+
+<section>
+    <h2>Saved Stories</h2>
+
+    <div id="storiesContainer"></div>
+</section>
+
+</main>
+
+
+<footer>
+    <p>
+        © <span id="currentYear"></span>
+        Family Roots Explorer | Simon Banda
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+<script src="scripts/family.js"></script>
+
+</body>
+</html>
